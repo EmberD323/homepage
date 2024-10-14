@@ -10,7 +10,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px;
     background-color: rgb(153, 196, 153);
 
 }
@@ -26,6 +25,7 @@ figure>img{
 figcaption {
     position: absolute;
     bottom: 0;
+    right:25%;
     padding-left: 10px;
     font-size: 50px;
     color: white;
@@ -54,9 +54,7 @@ figcaption {
 .myWork{
     display: flex;
     flex-direction: column;
-    margin: 70px;
-    padding: 20px;
-    align-self: center;
+    
 }
 .myWork>.title{
     padding-left:25px;
@@ -64,16 +62,18 @@ figcaption {
 
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-    gap:50px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    margin:30px;
+    gap:20px;
+    padding: 10px;
 }
+
 .project{
     border: 1px solid rebeccapurple;
     font-size: 20px;
 }
 .screenshot{
-    min-height: 200px;
+    height: 200px;
     text-align: center;
     background-color: rgb(205, 255, 238);
 }
@@ -96,18 +96,17 @@ figcaption {
 }
 
 footer{
-    margin: 50px;
     background-color: rgb(153, 196, 153);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 70px;
-    gap:50px
+    justify-content: center
 }
 footer>img{
-    max-height:400px  
+    max-width:375px;
+    object-fit:contain;
 }
 .contact{
+    margin:50px;
     font-size: 25px;
     display: flex;
     flex-direction: column;
